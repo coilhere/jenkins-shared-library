@@ -6,5 +6,6 @@ def call() {
 
     sh "pip install jupyter nbconvert"
     sh "pip install -r ${requirementsFilePath}"
+    echo "${requirementsFilePath}"
     // sh "python -u eau2c2_dashcore.py"
 }
