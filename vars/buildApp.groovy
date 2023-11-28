@@ -6,7 +6,7 @@ def call() {
         sh "ls -la"
 
         // Specify the path relative to Jenkins workspace
-        def requirementsFilePath = "${PWD}requirements.txt"
+        def requirementsFilePath = "${PWD}home/rym/eau2c2/eau2c2/app/requirements.txt"
 
         sh "pip install jupyter nbconvert"
         sh "pip install -r ${requirementsFilePath}"
