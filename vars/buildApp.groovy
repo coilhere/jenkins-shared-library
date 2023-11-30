@@ -1,5 +1,6 @@
 #!/usr/bin/env groovy
 def call() {
+    echo"Building the application at the branch $BRANCH_NAME"
    dir('app') {
         echo "Current directory: ${PWD}"
         echo "Contents of the directory:"
