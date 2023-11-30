@@ -12,6 +12,6 @@ def call(String imageName){
         // sh "docker push 44.204.7.163:8083/eau2c2:1.0 "
 
         // Push the Docker image to the registry
-        sh 'docker push $imageName'
+        sh "docker push $imageName"
         }
 }
