@@ -6,7 +6,7 @@ def call(){
         sh "ls -la"
         echo "Current directory: ${PWD}"
         sh 'docker build -t eau2c2:1.0 -f ./app/Dockerfile.dev .'
-        sh "echo $PASS | docker login -u $USER --password-stdin"
+sh "echo $PASS | docker login -u $USER --password-stdin 3.82.130.20:8083"
         sh" tag eau2c2:1.0 3.82.130.20:8083/eau2c2:1.0"
         sh "docker push 3.82.130.20:8083/eau2c2:1.0 "
 }
